@@ -37,7 +37,7 @@ body {
 .box {
     font-size: 1.2rem;
     background-color: var(--mid-blue);
-    width: 50%;
+    width: 55%;
     height: 50%;
     border-radius: .6rem;
     display: grid;
@@ -46,14 +46,15 @@ body {
     text-align: center;
     column-gap: 1rem;
     grid-template-areas: 
-        'text text text'
-        'binary-input button result';
+        'text text'
+        'binary-input result';
     grid-template-rows: 30% auto;
-    grid-template-columns: 2fr auto 1fr;
+    grid-template-columns: 2fr 1fr;
     box-shadow: 0 5px 6px var(--black-blue);
 }
 
 .text{
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -65,17 +66,28 @@ body {
 
 .binary-inputbox {
     grid-area: binary-input;
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    margin-left: auto;
 }
 
 .binary-input {
+    font-family: var(--body-font);
+    font-size: 1rem;
     background-color: var(--white-blue);
     border: 1px solid var(--mid-dark-blue);
     border-radius: 3px;
     padding: .2rem;
+    margin-right: 1rem;
+}
+
+.binary-input:focus {
+    outline: 1px solid var(--mid-dark-blue);
+    box-shadow: 2px 2px 3px var(--mid-dark-blue), -2px -2px 3px var(--mid-dark-blue);
 }
 
 .transform-btn {
-    grid-area: button;
     color: var(--white-blue);
     background-color: var(--mid-dark-blue);
     font-family: var(--body-font);
@@ -85,6 +97,12 @@ body {
     border-radius: 5px;
     border: 2px solid var(--mid-dark-blue);
     cursor: pointer;
+    /* transition: background-color 0.5s ease; */
+}
+
+.transform-btn:active {
+    background-color: var(--mid-light-blue);
+    box-shadow: 2px 2px 3px var(--mid-dark-blue), -2px -2px 3px var(--mid-dark-blue);
 }
 
 .decimal-equiv {

@@ -10,12 +10,12 @@
 <body>
     <h1 class="page-title">Binary to Decimal</h1>
     <section class="box" id="box">
-        <p class="text" id="text">Enter an 8 digit binary number to see it's decimal equivalent:</p>
-        <div class="binary-inputbox">
+        <p class="text" id="text">Enter an (up to) 8 digit binary number to see it's decimal equivalent:</p>
+        <form class="binary-inputbox" id="binary-inputbox">
             <label for="binary-input" class="binary_input-label">Binary Digit</label>
             <input type="text" class="binary-input" id="binary-input" name="binary-input">
-        </div>
-        <input type="submit" value="Transform" class="transform-btn" id="transform-btn">
+            <input type="submit" value="Transform" class="transform-btn" id="transform-btn">
+        </form>
         <span class="decimal-equiv" id="decimal-equiv">0</span>
     </section>
 
