@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+
+:root {
+/*Fonte*/
+--body-font:'Montserrat', sans-serif;
+--base-size: 16px;
+/*Cores*/
+--black-blue: #00080c;
+--dark-blue: #00111A;
+--mid-dark-blue: #001B29;
+--mid-blue: #003047;
+--mid-light-blue: #003D5C;
+--light-blue: #00699e;
+--white-blue: #dcf3ff;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--body-font);
+    font-size: var(--base-size);
+    font-weight: 500;
+    color: var(--white-blue);
+    background-color: var(--dark-blue);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.page-title {
+    font-size: 3rem;
+}
+
+.box {
+    font-size: 1.2rem;
+    background-color: var(--mid-blue);
+    width: 50%;
+    height: 50%;
+    border-radius: .6rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    column-gap: 1rem;
+    grid-template-areas: 
+        'text text text'
+        'binary-input button result';
+    grid-template-rows: 30% auto;
+    grid-template-columns: 2fr auto 1fr;
+    box-shadow: 0 5px 6px var(--black-blue);
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    grid-area: text;
+    border-bottom: 1px solid var(--mid-dark-blue);
+    box-shadow: 0 1px 2px var(--mid-dark-blue);
+}
+
+.binary-inputbox {
+    grid-area: binary-input;
+}
+
+.binary-input {
+    background-color: var(--white-blue);
+    border: 1px solid var(--mid-dark-blue);
+    border-radius: 3px;
+    padding: .2rem;
+}
+
+.transform-btn {
+    grid-area: button;
+    color: var(--white-blue);
+    background-color: var(--mid-dark-blue);
+    font-family: var(--body-font);
+    font-weight: 600;
+    font-size: 1.1rem;
+    padding: .4rem;
+    border-radius: 5px;
+    border: 2px solid var(--mid-dark-blue);
+    cursor: pointer;
+}
+
+.decimal-equiv {
+    font-size: 1.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: result;
+    border: 1px solid var(--mid-dark-blue);
+    border-radius: 5px;
+    width: 70%;
+    height: 40%;
+    margin: auto;
+}
