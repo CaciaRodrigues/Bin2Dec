@@ -8,15 +8,16 @@ binaryInputBox.addEventListener('submit', (e) => {
 
     let binaryNumber = e.target.elements['binary-input'];
     
-    decimalResult.innerHTML = binaryNumber.value;
+    // decimalResult.innerHTML = binaryNumber.value;
 
-    //transformNumber(binaryNumber);
+    transformNumber(binaryNumber);
         
     console.log(binaryNumber.value); 
 
     binaryNumber.value = "";
 })
 
-/*function transformNumber(number) {
-    decimalResult.innerHTML = number.value;
-}*/
+function transformNumber(number) {
+    // Transformando o valor binário em decimal e o colocando dentro do innerHTML do decimal. 
+    decimalResult.innerHTML = parseInt(number.value, 2);
+}

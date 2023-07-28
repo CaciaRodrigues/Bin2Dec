@@ -7,9 +7,9 @@ Este projeto é um desafio para ciar uma aplicação que recebe um input em núm
 
 As principais atividades feitas neste código são:
 
-- Capturar o valor do input e enviá-lo ao campo adequado no evento de submit.
-- Transformar o valor binário digitado no seu equivalente decimal quando esse valor for ser mostrado na tela.
-- Garantir que o usúario seja capaz apenas de digitar números binários no campo de inputs e que esses valores não excedam 8 digítos.
+- [x] Capturar o valor do input e enviá-lo ao campo adequado no evento de submit.
+- [x] Transformar o valor binário digitado no seu equivalente decimal quando esse valor for ser mostrado na tela.
+- [] Garantir que o usúario seja capaz apenas de digitar números binários no campo de inputs e que esses valores não excedam 8 digítos.
 
 >Esta desafio vem do repositório **app-ideas** do usúario [**Florin Pop**](https://github.com/florinpop17) no GitHub.
 >
@@ -21,9 +21,9 @@ This project is a challenge to create an application that receives a binary numb
 
 The main activities done in this code are:
 
-- Capturing the value of the input and send it to the adequate place on the submit event.
-- Transform the binary value typed into it's equivalent decimal number when it is shown on the screen.
-- Ensure  that the user is only capable of typing binary numbers in the input field and that the value doesn't exceed 8 digits.
+- [x] Capturing the value of the input and send it to the adequate place on the submit event.
+- [x] Transform the binary value typed into it's equivalent decimal number when it is shown on the screen.
+- [] Ensure  that the user is only capable of typing binary numbers in the input field and that the value doesn't exceed 8 digits.
 
 > This challenge comes from the repository **app-ideas** of the user [**Florin Pop**](https://github.com/florinpop17) on GitHub.
 >
