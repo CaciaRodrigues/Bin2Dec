@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
-
 :root {
 /*Fonte*/
 --body-font:'Montserrat', sans-serif;
@@ -99,7 +98,6 @@ body {
     border-radius: 5px;
     border: 2px solid var(--mid-dark-blue);
     cursor: pointer;
-    /* transition: background-color 0.5s ease; */
 }
 
 .transform-btn:active {
@@ -122,9 +120,14 @@ body {
 
 /*Configurações da invalidez do input*/
 .invalid_message {
+    display: none;
     color: var(--error-red);
     font-size: .9rem;
     grid-area: invalid-message;
 }
 
+.fa-circle-exclamation {
+    color: var(--error-red);
+    font-size: 2rem;
+}
 
