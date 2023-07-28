@@ -6,6 +6,7 @@
 --body-font:'Montserrat', sans-serif;
 --base-size: 16px;
 /*Cores*/
+--error-red: #d10213;
 --black-blue: #00080c;
 --dark-blue: #00111A;
 --mid-dark-blue: #001B29;
@@ -47,8 +48,9 @@ body {
     column-gap: 1rem;
     grid-template-areas: 
         'text text'
-        'binary-input result';
-    grid-template-rows: 30% auto;
+        'binary-input result'
+        'invalid-message invalid-message';
+    grid-template-rows: 30% auto 15%;
     grid-template-columns: 2fr 1fr;
     box-shadow: 0 5px 6px var(--black-blue);
 }
@@ -117,3 +119,12 @@ body {
     height: 40%;
     margin: auto;
 }
+
+/*Configurações da invalidez do input*/
+.invalid_message {
+    color: var(--error-red);
+    font-size: .9rem;
+    grid-area: invalid-message;
+}
+
+

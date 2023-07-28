@@ -9,7 +9,7 @@ As principais atividades feitas neste código são:
 
 - [x] Capturar o valor do input e enviá-lo ao campo adequado no evento de submit.
 - [x] Transformar o valor binário digitado no seu equivalente decimal quando esse valor for ser mostrado na tela.
-- [] Garantir que o usúario seja capaz apenas de digitar números binários no campo de inputs e que esses valores não excedam 8 digítos.
+- [ ] Garantir que o usúario seja capaz apenas de digitar números binários no campo de inputs e que esses valores não excedam 8 digítos.
 
 >Esta desafio vem do repositório **app-ideas** do usúario [**Florin Pop**](https://github.com/florinpop17) no GitHub.
 >
@@ -23,7 +23,7 @@ The main activities done in this code are:
 
 - [x] Capturing the value of the input and send it to the adequate place on the submit event.
 - [x] Transform the binary value typed into it's equivalent decimal number when it is shown on the screen.
-- [] Ensure  that the user is only capable of typing binary numbers in the input field and that the value doesn't exceed 8 digits.
+- [ ] Ensure  that the user is only capable of typing binary numbers in the input field and that the value doesn't exceed 8 digits.
 
 > This challenge comes from the repository **app-ideas** of the user [**Florin Pop**](https://github.com/florinpop17) on GitHub.
 >
