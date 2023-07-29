@@ -16,16 +16,16 @@ binaryInputBox.addEventListener('submit', (e) => {
 })
 
 function transformNumber(number) {
-    // Caso o input tenha mais do que 8 dígitos
-    if(number.value.length > 8) {
+    // Caso o input tenha mais do que 8 dígitos ou seja diferente de um número binário
+    if(number.value.length > 8 || /[^01]/.test(Number(number.value))) {
         mensagemErro.style.display = "block";
-        mensagemErro.innerHTML = 'Your entry exceeds our limit of 8 digits! Please try again.';
+        mensagemErro.innerHTML = 'Your entry exceeds our limit of 8 digits or is not a binary number! Please try again.';
         decimalResult.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>'
-    // Caso o input seja diferente de um número binário
-    } else if(/[^01]/.test(Number(number.value))){
-        mensagemErro.style.display = "block";
-        mensagemErro.innerHTML = 'Your entry is not a binary number! Please enter only binary digits.';
-        decimalResult.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>'
+    // Caso o usuário tente enviar sem ter digitado nenhum número
+    } else if(number.value == ""){
+        mensagemErro.style.display = 'block';
+        mensagemErro.innerHTML = "No number has been entered, please try again.";
+        decimalResult.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>';
     // Transformando o valor binário em decimal e o colocando dentro do innerHTML do decimal. 
     } else {
         decimalResult.innerHTML = parseInt(number.value, 2);
